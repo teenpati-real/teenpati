@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeenPati Master Original Company</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #root {
+            margin: 1rem 0;
+        }
+
+        img {
+            max-width: 100vw;
+        }
+
+        #linkContainer {
+            margin: 1rem;
+        }
+
+        #linkContainer>li {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            margin: 2.5rem;
+        }
+
+        #imageViewer {
+            display: grid;
+            grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+            width: max-content;
+            max-width: 100vw;
+            margin-top: 2rem;
+        }
+
+        .imageContainer {
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .imageContainer>img {
+            width: 100%;
+            height: 100%;
+            object-position: center;
+            object-fit: cover;
+            transform: scale(1.4);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <h1>Original teenpati.com link 🔗</h1>
+        <ul id="linkContainer">
+            <li>
+                <span>TeenPati Master 🔗</span>
+                <a href="https://www.earntp.com/m/39bi4">https://www.teenpati.com/...</a>
+            </li>
+            <li>
+                <span style="background-color: gold; color: black; width: fit-content;">TeenPati GOLD 🔗</span>
+                <a href="https://www.earntp.com/gold/39bi4?f=w&p=wa&tp=gold1">https://www.teenpatigold.com/...</a>
+            </li>
+        </ul>
+        <img src="./1.jpeg" alt="teenpati 1">
+        <div id="imageViewer">
+            <div class="imageContainer"><img src="./m1.jpeg"></div>
+            <div class="imageContainer"><img src="./m2.jpeg"></div>
+            <div class="imageContainer"><img src="./m3.jpeg"></div>
+            <div class="imageContainer"><img src="./m4.jpeg"></div>
+        </div>
+    </div>
+</body>
+
+</html>
